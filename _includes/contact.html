@@ -36,10 +36,16 @@
       <a href="{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
     </li>
     {% endif %}
+    
+    {% if sidebar.google_scholar %}
+    <li class="google-scholar"><i class="fas fa-graduation-cap fa-fw"></i>
+      <a href="{{ sidebar.google_scholar }}" target="_blank">Google Scholar</a>
+    </li>
+    {% endif %}
 
     {% if sidebar.linkedin %}
-    <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+    <li class="linkedin"><i class="fab fa-linkedin fa-fw"></i>
+      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">LinkedIn</a>
     </li>
     {% endif %}
 
