@@ -23,26 +23,27 @@ career-profile:
   title: About Me
   summary: |
     I am a Ph.D. student in the integrated M.S./Ph.D. program at [**KAIST AI**](https://gsai.kaist.ac.kr/?lang=en), working in the Optimization & Machine Learning Laboratory (OptiML) under the supervision of [**Prof. Chulhee Yun**](https://chulheeyun.github.io/).
-    My research focuses on optimization theory, particularly the theoretical understanding of optimization algorithms and their convergence behavior.
-    I received my B.S. in [**Mathematical Sciences**](https://mathsci.kaist.ac.kr/home/en/) at KAIST.
+    My research focuses on optimization theory, with an emphasis on the theoretical understanding of optimization algorithms and their convergence behavior.
+    I received my B.S. in [**Mathematical Sciences**](https://mathsci.kaist.ac.kr/home/en/) from KAIST.
 
 education:
   title: Education
   info:
-  - degree: Integrated M.S./Ph.D. program in AI
+  - degree: Integrated M.S./Ph.D. in Artificial Intelligence
     university: KAIST
     time: Feb. 2025 - Present
-  - degree: B.S. in Mathematical Sciences (Summa Cum Laude)
+  - degree: B.S. in Mathematical Sciences, Summa Cum Laude
     university: KAIST
     time: Feb. 2021 - Feb. 2025
 
 news:
   - date: "Mar. 2026"
-    content: "Started the integrated M.S./Ph.D. program in AI at KAIST."
+    content: "Transitioned to the integrated M.S./Ph.D. program in AI at KAIST."
   - date: "May 2025"
-    content: "Our paper [**Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent**](https://openreview.net/forum?id=KBUSuiLBMq) was accepted to **ICML 2025**!"
+    content: "Our paper, **Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent**, was accepted to **ICML 2025**!"
   - date: "Feb. 2025"
     content: "Started the M.S. program in AI at KAIST."
+
 
 publications:
   title: Publications
@@ -56,4 +57,5 @@ publications:
 
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br>
+  <span>Last updated: 2026-02-28</span>
