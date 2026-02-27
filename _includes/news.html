@@ -1,0 +1,25 @@
+{% assign news_list = site.data.data.news %}
+{% if news_list %}
+<section class="section news-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
+    </span>
+    News
+  </h2>
+
+  <div class="news-container" style="margin-top: 20px;">
+    {% for item in news_list %}
+      <div class="item" style="margin-bottom: 15px; display: flex; align-items: flex-start; line-height: 1.6;">
+        <span class="news-date" style="min-width: 100px; font-weight: 700; color: #2d343e; flex-shrink: 0;">
+          {{ item.date }}
+        </span>
+        <span class="news-content" style="color: #444; margin-left: 15px;">
+          {{ item.content | markdownify }}
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

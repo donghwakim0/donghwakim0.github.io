@@ -18,13 +18,23 @@
 
   {% for publication in publications.papers %}
   <div class="item">
-    {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
-    {% else %}
-      <li>{{ publication.title }}</li>
-    {% endif %}
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
+    <li>
+      {% if publication.link %}
+        <a href="{{ publication.link }}">{{ publication.title }}</a>
+      {% else %}
+        {{ publication.title }}
+      {% endif %}
+
+      {% if publication.arxiv %}
+        <a href="{{ publication.arxiv }}" target="_blank" rel="noopener" class="pub-badge">arXiv</a>
+      {% endif %}
+      {% if publication.openreview %}
+        <a href="{{ publication.openreview }}" target="_blank" rel="noopener" class="pub-badge">OpenReview</a>
+      {% endif %}
+    </li>
+
+    <div class="publication-authors">{{ publication.authors | markdownify }}</div>
+    <div class="publication-conference">{{ publication.conference | markdownify }}</div>
   </div><!--//item-->
   {% endfor %}
 

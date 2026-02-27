@@ -218,22 +218,13 @@ education:
 #     link: "#"
 #     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-projects:
-  title: News
-  intro: >
-    Latest updates on my research and academic activities.
-  assignments:
-  - title: "Started the Ph.D. portion of the integrated M.S./Ph.D. program in AI at KAIST."
-    link: "#"
-    tagline: "Mar. 2026"
-
-  - title: "Our paper **Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent** was accepted to **ICML 2025**!"
-    link: "https://openreview.net/forum?id=KBUSuiLBMq"
-    tagline: "May 2025"
-
-  - title: "Started the integrated M.S./Ph.D. program at KAIST AI."
-    link: "#"
-    tagline: "Feb. 2025"
+news:
+  - date: "Mar. 2026"
+    content: "Started the integrated M.S./Ph.D. program in AI at KAIST."
+  - date: "May 2025"
+    content: "Our paper [**Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent**](https://openreview.net/forum?id=KBUSuiLBMq) was accepted to **ICML 2025**!"
+  - date: "Feb. 2025"
+    content: "Started the M.S. program in AI at KAIST."
 
 publications:
   title: Publications
@@ -244,8 +235,10 @@ publications:
   papers:
   - title: Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent
     link: "https://openreview.net/forum?id=KBUSuiLBMq"
-    authors: "Donghwa Kim, Jaewook Lee, Chulhee Yun"
-    conference: ICML 2025
+    authors: "**Donghwa Kim**, [Jaewook Lee](https://jwlee-primal.com/), [Chulhee Yun](https://chulheeyun.github.io/)"
+    conference: "**ICML 2025**"
+    arxiv: "https://arxiv.org/abs/2505.23152"
+    openreview: "https://openreview.net/forum?id=KBUSuiLBMq"
 
   # - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
   #   link: "#"
