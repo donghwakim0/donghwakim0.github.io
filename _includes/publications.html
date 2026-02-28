@@ -31,6 +31,9 @@
       {% if publication.openreview %}
         <a href="{{ publication.openreview }}" target="_blank" rel="noopener" class="pub-badge">OpenReview</a>
       {% endif %}
+      {% if publication.doi %}
+        <a href="{{ publication.doi }}" target="_blank" rel="noopener" class="pub-badge">DOI</a>
+      {% endif %}
     </li>
 
     <div class="publication-authors">{{ publication.authors | markdownify }}</div>

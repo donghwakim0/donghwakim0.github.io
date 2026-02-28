@@ -32,7 +32,7 @@ education:
   - degree: Integrated M.S./Ph.D. in Artificial Intelligence
     university: KAIST
     time: Feb. 2025 - Present
-  - degree: B.S. in Mathematical Sciences, Summa Cum Laude
+  - degree: B.S. in Mathematical Sciences, *Summa Cum Laude*
     university: KAIST
     time: Feb. 2021 - Feb. 2025
 
@@ -49,11 +49,14 @@ publications:
   title: Publications
   papers:
   - title: Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent
-    # link: "https://openreview.net/forum?id=KBUSuiLBMq"
     authors: "**Donghwa Kim**, [Jaewook Lee](https://jwlee-primal.com/), [Chulhee Yun](https://chulheeyun.github.io/)"
     conference: "**ICML 2025**"
     arxiv: "https://arxiv.org/abs/2505.23152"
     openreview: "https://openreview.net/forum?id=KBUSuiLBMq"
+  - title: Deep Symbolic Learning for Histogram-Valued Regression Data
+    authors: "Ilsuk Kang, **Donghwa Kim**, Hosik Choi, Young Joo Yoon, Cheolwoo Park"
+    conference: "**Statistical Analysis and Data Mining, 2025**"
+    doi: "https://doi.org/10.1002/sam.70033"
 
 
 footer: >
