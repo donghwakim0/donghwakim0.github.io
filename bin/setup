@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+if ! command -v rbenv >/dev/null 2>&1; then
+  echo "rbenv is required. Install it with: brew install rbenv ruby-build"
+  exit 1
+fi
+
+ruby_version="$(cat .ruby-version)"
+bundler_version="2.6.9"
+
+if ! rbenv versions --bare | grep -qx "$ruby_version"; then
+  rbenv install "$ruby_version"
+fi
+
+if ! RBENV_VERSION="$ruby_version" rbenv exec bundle "_$bundler_version"_ -v >/dev/null 2>&1; then
+  RBENV_VERSION="$ruby_version" rbenv exec gem install bundler -v "$bundler_version" --no-document
+fi
+
+RBENV_VERSION="$ruby_version" rbenv exec bundle "_$bundler_version"_ config set path vendor/bundle
+RBENV_VERSION="$ruby_version" rbenv exec bundle "_$bundler_version"_ install
+
+echo "Ready. Run ./bin/serve and open http://127.0.0.1:4000"

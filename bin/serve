@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+ruby_version="$(cat .ruby-version)"
+bundler_version="2.6.9"
+
+if ! command -v rbenv >/dev/null 2>&1; then
+  echo "rbenv is required. Install it with: brew install rbenv ruby-build"
+  exit 1
+fi
+
+if ! RBENV_VERSION="$ruby_version" rbenv exec bundle "_$bundler_version"_ check >/dev/null 2>&1; then
+  echo "Dependencies are missing. Running ./bin/setup first..."
+  ./bin/setup
+fi
+
+if command -v lsof >/dev/null 2>&1 && lsof -nP -iTCP:4000 -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "Something is already listening on http://127.0.0.1:4000"
+  echo "If this is the homepage server, just open http://127.0.0.1:4000"
+  echo "To stop the existing server, press Ctrl-C in the terminal where it is running."
+  exit 0
+fi
+
+RBENV_VERSION="$ruby_version" rbenv exec bundle "_$bundler_version"_ exec jekyll serve --host 127.0.0.1 --port 4000
