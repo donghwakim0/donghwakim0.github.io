@@ -37,6 +37,8 @@ education:
     time: Feb. 2021 - Feb. 2025
 
 news:
+  - date: "Jun. 2026"
+    content: "Our paper, **Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization**, was accepted to the ICML 2026 High-dimensional Learning Dynamics (HiLD) Workshop!"
   - date: "Mar. 2026"
     content: "Transitioned to the integrated M.S./Ph.D. program in AI at KAIST."
   - date: "May 2025"
@@ -48,6 +50,10 @@ news:
 publications:
   title: Publications
   papers:
+  - title: Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization
+    authors: "**Donghwa Kim**, [Chulhee Yun](https://chulheeyun.github.io/)"
+    conference: "**ICML 2026 Workshop on High-dimensional Learning Dynamics (HiLD)**"
+    openreview: "https://openreview.net/forum?id=by4RD1Gkrn"
   - title: Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent
     authors: "**Donghwa Kim**, [Jaewook Lee](https://jwlee-primal.com/), [Chulhee Yun](https://chulheeyun.github.io/)"
     conference: "**ICML 2025**"
@@ -61,4 +67,4 @@ publications:
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br>
-  <span>Last updated: 2026-02-28</span>
+  <span>Last updated: 2026-06-14</span>
