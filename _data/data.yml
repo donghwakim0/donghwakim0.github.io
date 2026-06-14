@@ -37,7 +37,7 @@ education:
     time: Feb. 2021 - Feb. 2025
 
 news:
-  - date: "Jun. 2026"
+  - date: "May 2026"
     content: "Our paper, **Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization**, was accepted to the ICML 2026 High-dimensional Learning Dynamics (HiLD) Workshop!"
   - date: "Mar. 2026"
     content: "Transitioned to the integrated M.S./Ph.D. program in AI at KAIST."
