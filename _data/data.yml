@@ -38,11 +38,11 @@ education:
 
 news:
   - date: "May 2026"
-    content: "Our paper, **Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization**, was accepted to the ICML 2026 High-dimensional Learning Dynamics (HiLD) Workshop!"
+    content: "Our paper, **Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization**, was accepted to the ICML 2026 High-dimensional Learning Dynamics (HiLD) Workshop."
   - date: "Mar. 2026"
     content: "Transitioned to the integrated M.S./Ph.D. program in AI at KAIST."
   - date: "May 2025"
-    content: "Our paper, **Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent**, was accepted to **ICML 2025**!"
+    content: "Our paper, **Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent**, was accepted to **ICML 2025**."
   - date: "Feb. 2025"
     content: "Started the M.S. program in AI at KAIST."
 
@@ -64,7 +64,14 @@ publications:
     conference: "**Statistical Analysis and Data Mining, 2025**"
     doi: "https://doi.org/10.1002/sam.70033"
 
+academic-services:
+  title: Academic Services
+  info:
+  - role: Conference Reviewer
+    organization: Neural Information Processing Systems (NeurIPS)
+    year: "2026"
+
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br>
-  <span>Last updated: 2026-06-14</span>
+  <span>Last updated: 2026-07-11</span>

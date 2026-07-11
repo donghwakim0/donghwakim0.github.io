@@ -1,0 +1,23 @@
+{% assign academic_services = site.data.data.academic-services %}
+{% if academic_services %}
+<section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ academic_services.title }}
+  </h2>
+
+  {% for service in academic_services.info %}
+  <div class="item">
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{{ service.role }}</h3>
+      </div>
+      <div class="company">{{ service.organization }}, {{ service.year }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
