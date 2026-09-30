@@ -29,7 +29,7 @@
         <a href="{{ publication.arxiv }}" target="_blank" rel="noopener" class="pub-badge">arXiv</a>
       {% endif %}
       {% if publication.openreview %}
-        <a href="{{ publication.openreview }}" target="_blank" rel="noopener" class="pub-badge">OpenReview</a>
+        <a href="{{ publication.openreview }}" target="_blank" rel="noopener" class="pub-badge">{{ publication.openreview_label | default: "OpenReview" }}</a>
       {% endif %}
       {% if publication.doi %}
         <a href="{{ publication.doi }}" target="_blank" rel="noopener" class="pub-badge">DOI</a>
@@ -37,7 +37,13 @@
     </li>
 
     <div class="publication-authors">{{ publication.authors | markdownify }}</div>
-    <div class="publication-conference">{{ publication.conference | markdownify }}</div>
+    {% if publication.venues %}
+      {% for venue in publication.venues %}
+      <div class="publication-conference">{{ venue | markdownify }}</div>
+      {% endfor %}
+    {% else %}
+      <div class="publication-conference">{{ publication.conference | markdownify }}</div>
+    {% endif %}
   </div><!--//item-->
   {% endfor %}
 

@@ -1,6 +1,6 @@
 {% assign academic_services = site.data.data.academic-services %}
 {% if academic_services %}
-<section class="section experiences-section">
+<section class="section experiences-section academic-services-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -9,13 +9,18 @@
     {{ academic_services.title }}
   </h2>
 
-  {% for service in academic_services.info %}
+  {% assign service_groups = academic_services.info | group_by: "role" %}
+  {% for group in service_groups %}
   <div class="item">
     <div class="meta">
       <div class="upper-row">
-        <h3 class="job-title">{{ service.role }}</h3>
+        <h3 class="job-title">{{ group.name }}</h3>
       </div>
-      <div class="company">{{ service.organization }}, {{ service.year }}</div>
+      <ul class="service-list">
+        {% for service in group.items %}
+        <li>{{ service.organization }}, {{ service.year }}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
   {% endfor %}

@@ -218,6 +218,11 @@ p {
     margin-bottom: 10px;
     color: $text-grey;
   }
+  .academic-services-section .service-list {
+    margin: 4px 0 0;
+    padding-left: 20px;
+    color: $text-grey;
+  }
 
   .project-title {
     font-size: 16px;
@@ -253,6 +258,9 @@ p {
     font-style: italic;
     color: $text-grey;
     margin-bottom: 1px;
+  }
+  .publication-conference p {
+    margin-bottom: 0;
   }
   .publications-section {
     .intro {

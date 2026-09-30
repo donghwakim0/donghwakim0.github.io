@@ -37,6 +37,8 @@ education:
     time: Feb. 2021 - Feb. 2025
 
 news:
+  - date: "Sep. 2026"
+    content: "Our paper, **Beyond Rate Optimality: How Polyak's Momentum Shapes Non-Convex Optimization**, was accepted to the NeurIPS 2026 OPT Workshop."
   - date: "May 2026"
     content: "Our paper, **Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization**, was accepted to the ICML 2026 High-dimensional Learning Dynamics (HiLD) Workshop."
   - date: "Mar. 2026"
@@ -50,10 +52,13 @@ news:
 publications:
   title: Publications
   papers:
-  - title: Understanding Polyak's Momentum in Deep Learning May Require Rethinking Non-Convex Optimization
+  - title: "Beyond Rate Optimality: How Polyak's Momentum Shapes Non-Convex Optimization"
     authors: "**Donghwa Kim**, [Chulhee Yun](https://chulheeyun.github.io/)"
-    conference: "**ICML 2026 Workshop on High-dimensional Learning Dynamics (HiLD)**"
+    venues:
+    - "**NeurIPS 2026 Workshop on Optimization for Machine Learning (OPT)**"
+    - "**ICML 2026 Workshop on High-dimensional Learning Dynamics (HiLD)**"
     openreview: "https://openreview.net/forum?id=by4RD1Gkrn"
+    openreview_label: "OpenReview (HiLD)"
   - title: Provable Benefit of Random Permutations over Uniform Sampling in Stochastic Coordinate Descent
     authors: "**Donghwa Kim**, [Jaewook Lee](https://jwlee-primal.com/), [Chulhee Yun](https://chulheeyun.github.io/)"
     conference: "**ICML 2025**"
@@ -68,10 +73,13 @@ academic-services:
   title: Academic Services
   info:
   - role: Conference Reviewer
+    organization: International Conference on Learning Representations (ICLR)
+    year: "2027"
+  - role: Conference Reviewer
     organization: Neural Information Processing Systems (NeurIPS)
     year: "2026"
 
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br>
-  <span>Last updated: 2026-07-11</span>
+  <span>Last updated: 2026-09-30</span>
